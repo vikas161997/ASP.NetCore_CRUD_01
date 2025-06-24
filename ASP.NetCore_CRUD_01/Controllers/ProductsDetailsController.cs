@@ -1,5 +1,6 @@
 ﻿using ASP.NetCore_CRUD_01.DataBase;
 using ASP.NetCore_CRUD_01.Model;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 
@@ -9,6 +10,7 @@ namespace ASP.NetCore_CRUD_01.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class ProductsDetailsController : ControllerBase
     {
         //private static List<ProductsDetail> _ProductsDetails = new List<ProductsDetail>

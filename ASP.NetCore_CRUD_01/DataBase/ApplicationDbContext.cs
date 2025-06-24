@@ -13,6 +13,7 @@ namespace ASP.NetCore_CRUD_01.DataBase
         public DbSet<ProductsDetail> PDetails { get; set; }
 
 
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<ProductsDetail>().ToTable("Employees");
